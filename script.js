@@ -52,8 +52,13 @@ function addPostElements(respName, respText, respImg) {
     blockContent.appendChild(postImg);
 }
 
-end = document.querySelector("#end");
+const createPostBtn = document.getElementById('create-btn');
 
+createPostBtn.addEventListener('click', (event) => {
+  createPost();
+});
+
+const end = document.querySelector("#end");
 
 window.addEventListener('load', (event) => {
     createPost();
@@ -67,4 +72,4 @@ const observer = new IntersectionObserver(entries => {
     })
   },)
   
-  observer.observe(end);
+observer.observe(end);

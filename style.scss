@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(180deg, #6F6F7A 0%, #FFFFFF 47.92%);
+    background-repeat: no-repeat;
+}
+
+/* TOP NAVIGATION */
+
+.top-nav {
+    width: 100%;
+    height: 61px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.top-nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.nav-left .logo {
+    margin: 0 8px 0 10px;
+    position: relative;
+}
+
+.nav-left .logo img:nth-of-type(2) {
+    position: absolute;
+    top: 7px;
+    left: 11px;
+}
+
+.nav-left form.search {
+    width: 281px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-left input.search {
+    width: 100%;
+    height: 100%;
+    background: #F1F2F5;
+    border-radius: 100px;
+    border-style: none;
+    padding-left: 36px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.nav-left form.search::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(assets/search-svgrepo-com.svg) no-repeat 0 0;
+    left: 5%;
+    bottom: 12px;
+}
+
+.nav-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin: 0 15px;
+    img {
+        padding: 5px;
+        margin: 0 15px;
+    }
+    div {
+        position: relative;
+        display: block;
+        &.screen::after {
+            display: block;
+            content: "6";
+            position: absolute;
+            right: 10px;
+            top: -2px;
+            background-color: red;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            color: white;
+        }
+        &.people::after {
+            display: block;
+            content: "1";
+            position: absolute;
+            right: 10px;
+            top: -2px;
+            background-color: red;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            color: white;
+        }
+    }
+    
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+}
+
+.nav-right .account {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .name {
+        font-weight: 500;
+        font-size: 15px;
+        margin: 0;
+        color: #080808;
+    }
+    .prof-picture img {
+        border-radius: 50%;
+    }
+}
+
+.nav-right .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    margin: 0 15px;
+}
+
+.nav-right .buttons div.first, .nav-right .buttons div.second, .nav-right .buttons div.third, .nav-right .buttons div.fourth {
+    position: relative;
+}
+
+.nav-right .buttons div img:nth-of-type(1) {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.nav-right .buttons div.fourth img:nth-of-type(1) {
+    position: absolute;
+    top: 16px;
+    left: 14px;
+}
+
+.nav-right .buttons div.third::after {
+    display: block;
+    content: "5";
+    position: absolute;
+    right: -4px;
+    top: -3px;
+    background-color: red;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    color: white;
+}
+
+/* PROFILE SECTION */
+
+#prof-section {
+    width: 877px;
+    margin: 0 auto;
+}
+
+.prof-section--banner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.prof-section--banner img {
+    border-radius: 5px;
+}
+
+.user-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-space .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-space .prof-picture img {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    margin-bottom: 13px;
+    margin-top: -10px;
+}
+
+.user-space .blue-btn {
+    width: 312px;
+    height: 40px;
+    background: #0572EF;
+    border-radius: 6px;
+    align-self: flex-end;
+    margin-bottom: 28px;
+}
+
+.user-space .user-name {
+    margin-left: 28px;
+}
+
+.user-space .user-name h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0;
+    color: #080808;
+}
+
+.user-space .user-name p {
+    font-weight: 400;
+    font-size: 17px;
+    color: #66676B;
+    margin: 0;
+}
+
+
+.mid-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        a {
+            font-weight: 500;
+            font-size: 15px;
+            text-decoration: none;
+            color: #66676B;
+
+        }
+        .more {
+            font-weight: 500;
+            font-size: 15px;
+            color: #66676B;
+        }
+    }
+    .soc-btns {
+        width:auto;
+        height: 36px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        .liked {
+            width: 110px;
+            padding-left: 25px;
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #E9F3FE;
+            border-radius: 6px;
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(assets/like-svgrepo-com.svg) no-repeat 0 0;
+                left: 22px;
+                bottom: 8px;
+            }
+        }
+        .message {
+            width: 110px;
+            padding-left: 25px;
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #E9F3FE;
+            border-radius: 6px;
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(assets/message-2.svg) no-repeat 0 0;
+                left: 10px;
+                bottom: 6px;
+            }
+        }
+        .search {
+            width: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #E9F3FE;
+            border-radius: 6px;
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .more {
+            width: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #E9F3FE;
+            border-radius: 6px;
+        }
+    }
+}
+
+@media screen and (min-width: 960px){
+    
+}
